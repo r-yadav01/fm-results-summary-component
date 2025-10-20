@@ -7,7 +7,7 @@ html {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
 
     --bg-gradient-start: hsl(252, 100%, 67%);
     --bg-gradient-end: hsl(241, 81%, 54%);
@@ -27,12 +27,16 @@ article {
     max-width: 376px;
 }
 
+article > .result {
+    border-radius: 0px 0px 35px 35px;
+}
+
 .result {
     text-align: center;
-    border-radius: 0px 0px 35px 35px;
     padding: 16px 28px;
-    color: hsl(221, 100%, 96%);
+    color: white;
     background-image: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end));
+    box-shadow: 0px 0px hsl(241, 81%, 54%);
 }
 
 .result > * {
@@ -50,12 +54,12 @@ article {
 
 .percent .obtained {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: block;
 }
 
 .comparison {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     padding: 0 16px 8px;
 }
 
@@ -72,10 +76,72 @@ h4,
 
 .summary {
     z-index: -1;
-    margin-top: -24px;
-    padding: 36px 16px;
+    margin-top: -32px;
+    padding: 48px 28px 20px;
 }
 
-.summary > * {
-    padding: 0 16px;
+.summary > h3,
+.marks {
+    color: hsl(224, 30%, 27%);
+}
+
+.summary img {
+    display: inline-block;
+}
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+.subject.one {
+    background-color: hsl(0, 100%, 67%, 0.07);
+}
+
+.subject.one .sub-name {
+    color: hsl(0, 100%, 67%);
+}
+
+.subject.two {
+    background-color: hsl(39, 100%, 56%, 0.07);
+}
+
+.subject.two .sub-name {
+    color: hsl(39, 100%, 56%);
+}
+
+.subject.three {
+    background-color: hsl(166, 100%, 37%, 0.07);
+}
+
+.subject.three .sub-name {
+    color: hsl(166, 100%, 37%);
+}
+
+.subject.four {
+    background-color: hsl(234, 85%, 45%, 0.07);
+}
+
+.subject.four .sub-name {
+    color: hsl(234, 85%, 45%);
+}
+
+.subject .sub-name {
+    display: flex;
+    gap: 12px;
+}
+
+.summary button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
 }

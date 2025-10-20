@@ -8,6 +8,7 @@ html {
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
+    height: 100%;
 
     --bg-gradient-start: hsl(252, 100%, 67%);
     --bg-gradient-end: hsl(241, 81%, 54%);
@@ -16,15 +17,14 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-height: 100vh;
+    height: 100%;
+    background-color: whitesmoke;
 }
 
 article {
-    max-width: 376px;
+    max-width: 430px;
+    margin: auto;
+    height: 100%;
 }
 
 article > .result {
@@ -59,8 +59,8 @@ article > .result {
 }
 
 .comparison {
-    /* font-size: 0.9rem; */
     padding: 0 16px 8px;
+    max-width: 40ch;
 }
 
 h4,
@@ -75,14 +75,21 @@ h4,
 }
 
 .summary {
+    position: relative;
     z-index: -1;
     margin-top: -32px;
-    padding: 48px 28px 20px;
+    padding: 58px 28px 16px;
+    background-color: white;
+    background-image: linear-gradient(to top, white 70%, hsl(221, 100%, 96%) 90%);
 }
 
 .summary > h3,
-.marks {
+.marks > b {
     color: hsl(224, 30%, 27%);
+}
+
+.marks {
+    color: hsl(224, 20%, 50%);
 }
 
 .summary img {
@@ -135,13 +142,44 @@ h4,
     gap: 12px;
 }
 
-.summary button {
+.button-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px;
+    background-color: white;
+}
+
+.continue {
     display: block;
-    width: 100%;
-    padding: 12px;
+    min-width: 90%;
+    padding: 16px;
     border-radius: 50px;
     background-color: hsl(224, 30%, 27%);
     color: white;
     font-weight: bold;
     font-size: 1.1rem;
+    border: none;
+    transition: all 0.3s ease;
+    /* margin: ; */
+}
+
+.continue:active {
+    cursor: pointer;
+    background-image: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end));
+}
+
+.attribution {
+    max-height: 3%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }

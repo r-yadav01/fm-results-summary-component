@@ -3,7 +3,7 @@ html {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     height: 100%;
 
     --bg-gradient-start: hsl(252, 100%, 67%);
@@ -59,11 +59,11 @@ article {
 }
 
 .comparison {
-    padding: 0 16px 8px;
+    padding: 0px 12px;
     max-width: 40ch;
 }
 
-h3,
+h2,
 .total,
 .comparison {
     color: hsl(241, 100%, 89%);
@@ -72,6 +72,7 @@ h3,
 .remarks {
     padding: 8px 0px;
     margin-bottom: -4px;
+    font-size: 2rem;
 }
 
 /* styles for the second div in the <article> */
@@ -193,12 +194,12 @@ h3,
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px 24px;
+        padding: 0px 30px;
     }
 
     article {
         border-radius: 30px;
-        max-width: 750px;
+        max-width: 800px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -207,12 +208,16 @@ h3,
 
     .result {
         border-radius: 30px 30px;
+        padding: 16px;
     }
 
+    .result > h2 {
+        margin-top: -20px;
+    }
     .summary {
         margin-top: 0px;
         margin-left: -32px;
-        padding: 16px 32px 16px 60px;
+        padding: 16px 36px 16px 64px;
         border-radius: 0px 30px 30px 0px;
         background-image: none;
     }

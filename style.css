@@ -198,8 +198,7 @@ h3,
 
     article {
         border-radius: 30px;
-        /* margin: ; */
-        max-width: 800px;
+        max-width: 750px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;

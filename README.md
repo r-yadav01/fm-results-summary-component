@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [hosted on github](https://github.com/r-yadav01/fm-results-summary-component)
+-   Live Site URL: [via github pages](https://r-yadav01.github.io/fm-results-summary-component/)
 
 ## My process
 

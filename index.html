@@ -1,67 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-        <title>Results summary component</title>
-    </head>
-    <body>
-        <article>
-            <div class="result">
-                <h2>Your Result</h2>
-                <div class="percent">
-                    <span class="obtained">76</span>
-                    <span class="total">of 100</span>
-                </div>
-                <h1 class="remarks">Great</h1>
-                <p class="comparison">
-                    You scored higher than 65% of the people who have taken these tests.
-                </p>
-            </div>
-            <div class="summary">
-                <h2>Summary</h2>
-                <div class="subject one">
-                    <span class="sub-name"
-                        ><img src="./images/icon-reaction.svg " alt="subject-icon" />Reaction</span
-                    >
-                    <span class="marks"><b>80</b> / 100</span>
-                </div>
-                <div class="subject two">
-                    <span class="sub-name"
-                        ><img src="./images/icon-memory.svg" alt="subject-icon" />Memory</span
-                    >
-                    <span class="marks"><b>92</b> / 100</span>
-                </div>
-                <div class="subject three">
-                    <span class="sub-name"
-                        ><img src="./images/icon-verbal.svg" alt="subject-icon" />Verbal</span
-                    >
-                    <span class="marks"><b>61</b> / 100</span>
-                </div>
-
-                <div class="subject four">
-                    <span class="sub-name"
-                        ><img src="./images/icon-visual.svg" alt="subject-icon" />Visual</span
-                    >
-                    <span class="marks"><b>73</b> / 100</span>
-                </div>
-                <button class="continue">Continue</button>
-            </div>
-        </article>
-
-        <div class="attribution">
-            Challenge by
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
-            >. Coded by <a href="https://github.com/r-yadav01" target="_blank">Rohan Yadav</a>.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="assets/script.js" defer></script>
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <article>
+      <!-- calculate result dynamically -->
+      <div class="result">
+        <h2>Your Result</h2>
+        <div class="percent">
+          <span class="obtained"></span>
+          <span class="total">of 100</span>
         </div>
-    </body>
+        <h1 class="remarks">Great</h1>
+        <p class="comparison">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div class="summary">
+        <h2>Summary</h2>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/r-yadav01" target="_blank">Rohan Yadav</a>.
+    </div>
+  </body>
 </html>
